@@ -1,12 +1,13 @@
 <template>
   <div>
-    Base Div
-    <h2 class="mt-16">Hi</h2>
+    <MainNav />
   </div>
 </template>
 
 <script>
+import MainNav from '@/components/MainNav';
 export default {
   name: 'App',
+  components: { MainNav },
 };
 </script>

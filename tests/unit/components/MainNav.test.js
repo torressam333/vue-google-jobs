@@ -9,6 +9,6 @@ describe('MainNav', () => {
   });
 
   it('Displays the correct company name', () => {
-    expect(wrapper.text()).toMatch('Torres Careers');
+    expect(wrapper.text()).toContain('Torres Careers');
   });
 });

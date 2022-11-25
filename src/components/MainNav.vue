@@ -4,9 +4,12 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <a href="/" class="flex items-center h-full text-xl">{{
-          companyName
-        }}</a>
+        <a
+          :href="url"
+          class="flex items-center h-full text-xl"
+          target="_blank"
+          >{{ companyName }}</a
+        >
       </div>
     </div>
   </header>
@@ -18,6 +21,7 @@ export default {
   data() {
     return {
       companyName: 'Torres Careers',
+      url: 'https://careers.google.com',
     };
   },
 };

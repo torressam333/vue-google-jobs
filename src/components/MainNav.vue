@@ -10,6 +10,13 @@
           target="_blank"
           >{{ companyName }}</a
         >
+        <nav class="h-full ml-12">
+          <ul class="flex h-full p-0 m-0 list-none">
+            <li v-for="item in navItems" :key="item" class="h-full ml-9">
+              <a href="" class="flex items-center h-full py-3">{{ item }}</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -22,6 +29,14 @@ export default {
     return {
       companyName: 'Torres Careers',
       url: 'https://careers.google.com',
+      navItems: [
+        'Teams',
+        'Locations',
+        'Life at Torres Co',
+        'How we hire',
+        'Students',
+        'Jobs',
+      ],
     };
   },
 };

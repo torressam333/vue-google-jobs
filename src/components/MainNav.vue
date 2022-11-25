@@ -12,7 +12,11 @@
         >
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
-            <li v-for="item in navItems" :key="item" class="h-full ml-9">
+            <li
+              v-for="item in navItems"
+              :key="item"
+              class="h-full ml-9 first:ml-0"
+            >
               <a href="" class="flex items-center h-full py-3">{{ item }}</a>
             </li>
           </ul>

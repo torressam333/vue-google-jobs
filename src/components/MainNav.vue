@@ -22,14 +22,20 @@
             </li>
           </ul>
         </nav>
+        <div class="flex items-center h-full ml-auto">
+          <ActionButton button-text="Sign In" />
+        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script>
+import ActionButton from '@/components/ActionButton';
+
 export default {
   name: 'MainNav',
+  components: { ActionButton },
   data() {
     return {
       companyName: 'Torres Careers',

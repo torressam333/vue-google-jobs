@@ -14,7 +14,7 @@ describe('MainNav', () => {
 
   it('Displays menu items for navigation', () => {
     // Find all list items
-    const navigationMenuItems = wrapper.findAll('[data-test="items"]');
+    const navigationMenuItems = wrapper.findAll('[data-test="main-nav-items"]');
     const navMenuItemsText = navigationMenuItems.map((item) => item.text());
 
     expect(navigationMenuItems.length).toBe(6);

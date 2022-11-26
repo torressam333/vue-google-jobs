@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669497586214" clover="3.2.0">
-  <project timestamp="1669497586214" name="All files">
+<coverage generated="1669497734191" clover="3.2.0">
+  <project timestamp="1669497734191" name="All files">
     <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="21" coveredelements="21" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
     <file name="MainNav.vue" path="/Users/sam.torres/code/personal-projects/vue-google-jobs/src/components/MainNav.vue">
       <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>

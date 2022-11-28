@@ -16,7 +16,7 @@
               v-for="item in navItems"
               :key="item"
               class="h-full ml-9 first:ml-0"
-              data-test="main-nav-items"
+              data-test="main-nav-item"
             >
               <a href="" class="flex items-center h-full py-3">{{ item }}</a>
             </li>

@@ -1,11 +1,11 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue';
-</script>
-
 <template>
-  <div class="wrapper">
-    <hello-world msg="Wazzzzzzup" />
-  </div>
+  <MainNav />
 </template>
 
-<style scoped></style>
+<script>
+import MainNav from "@/components/MainNav.vue";
+export default {
+  name: "App",
+  components: { MainNav },
+};
+</script>

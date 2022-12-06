@@ -23,12 +23,8 @@
           </ul>
         </nav>
         <div class="ml-auto flex h-full items-center">
-          <ActionButton
-            v-if="!isLoggedIn"
-            button-text="Sign In"
-            @click="toggleAuth"
-          />
-          <ProfileImage v-else @click="toggleAuth" />
+          <ProfileImage v-if="isLoggedIn" @click="logout" />
+          <ActionButton v-else button-text="Sign In" @click="login" />
         </div>
       </div>
     </div>
@@ -57,8 +53,11 @@ export default {
     };
   },
   methods: {
-    toggleAuth() {
-      return (this.isLoggedIn = !this.isLoggedIn);
+    login() {
+      this.isLoggedIn = true;
+    },
+    logout() {
+      this.isLoggedIn = false;
     },
   },
 };

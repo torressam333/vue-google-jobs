@@ -23,7 +23,12 @@
           </ul>
         </nav>
         <div class="ml-auto flex h-full items-center">
-          <ActionButton button-text="Sign In" />
+          <ActionButton
+            v-if="!isLoggedIn"
+            button-text="Sign In"
+            @click="toggleAuth"
+          />
+          <ProfileImage v-else @click="toggleAuth" />
         </div>
       </div>
     </div>
@@ -32,9 +37,10 @@
 
 <script>
 import ActionButton from "@/components/ActionButton.vue";
+import ProfileImage from "./ProfileImage.vue";
 export default {
   name: "MainNav",
-  components: { ActionButton },
+  components: { ActionButton, ProfileImage },
   data() {
     return {
       companyName: "Torres Careers",
@@ -47,7 +53,13 @@ export default {
         "Students",
         "Jobs",
       ],
+      isLoggedIn: false,
     };
+  },
+  methods: {
+    toggleAuth() {
+      return (this.isLoggedIn = !this.isLoggedIn);
+    },
   },
 };
 </script>

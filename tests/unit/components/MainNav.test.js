@@ -26,4 +26,24 @@ describe("MainNav", () => {
       "Jobs",
     ]);
   });
+
+  describe("when the user logs in", () => {
+    it("displays user profile image", () => {
+      render(MainNav);
+
+      // Search for image by alt text regex
+      const profileImage = screen.queryByRole("img", {
+        name: /profile image/i,
+      });
+
+      expect(profileImage).not.toBeInTheDocument();
+
+      const loginButton = screen.getByRole("button", {
+        name: /sign in/i,
+      });
+
+      //
+      expect(loginButton).toBeInTheDocument();
+    });
+  });
 });

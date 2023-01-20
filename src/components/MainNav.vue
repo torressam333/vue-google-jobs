@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts">
-import ActionButton from "@/components/ActionButton.vue";
+import ActionButton from "./ActionButton.vue";
 import ProfileImage from "./ProfileImage.vue";
 export default {
   name: "MainNav",

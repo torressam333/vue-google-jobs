@@ -59,6 +59,7 @@ describe("MainNav", () => {
       // Simulate logout
       await userEvent.click(profileImage);
 
+      // Case insensitive search for button text
       loginButton = screen.getByRole("button", {
         name: /sign in/i,
       });

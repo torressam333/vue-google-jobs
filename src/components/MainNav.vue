@@ -31,7 +31,7 @@
   </header>
 </template>
 
-<script>
+<script lang="ts">
 import ActionButton from "@/components/ActionButton.vue";
 import ProfileImage from "./ProfileImage.vue";
 export default {

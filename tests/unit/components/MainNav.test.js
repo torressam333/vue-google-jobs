@@ -28,7 +28,7 @@ describe("MainNav", () => {
     ]);
   });
 
-  describe("when the user logs in", () => {
+  describe("when the user logs in and logs out", () => {
     it("displays user profile image", async () => {
       render(MainNav);
 
